@@ -2,8 +2,8 @@
 
 ## Description
 
-Many people use arch because of its awesome ecosystem of community-curated `PKGBUILD` files in AUR.
-_portego_ uses these files to create Crux-compatible `Pkgfile`s.
+Many people use _Archlinux_ because of its awesome ecosystem of community-curated `PKGBUILD` files in AUR.
+_portego_ uses these files to create Crux-compatible port build files: `Pkgfile`.
 
 It is written in `Go` and mainly a fun project.
 
