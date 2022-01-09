@@ -5,7 +5,7 @@
 Many people use _Archlinux_ because of its awesome ecosystem of community-curated `PKGBUILD` files in AUR.
 _portego_ uses these files to create Crux-compatible port build files: `Pkgfile`.
 
-It is written in `Go` and mainly a fun project.
+It is written in `Go` and ***mainly a fun project***.
 
 ## Functions
 
@@ -38,3 +38,7 @@ Arguments:
 ## Changelog
 
 Right now we're on `0.0.0-prealpha-testing`. Version `1.0.0` might never come. Version `0.1` should contain basic functionality.
+
+## Sources / Links
+
+- [AURweb RPC Interface](https://wiki.archlinux.org/title/Aurweb_RPC_interface)
