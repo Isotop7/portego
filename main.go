@@ -13,9 +13,9 @@ import (
 // Logger types
 var (
 	DebugLogger		*log.Logger
-    WarningLogger 	*log.Logger
-    InfoLogger    	*log.Logger
-    ErrorLogger   	*log.Logger
+	WarningLogger 	*log.Logger
+	InfoLogger    	*log.Logger
+	ErrorLogger   	*log.Logger
 )
 
 var AUR_BASE_URL = "https://aur.archlinux.org/rpc/?v=5&type=search&by=name&arg="
@@ -91,7 +91,12 @@ func main() {
     
 	// Log application config
 	if *debugLogging {
-		DebugLogger.Printf("Portego arguments => Query: '%s', Output: '%s', Console: '%t', Debug: '%t'", *packageName, *outputPath, *consoleOutput, *debugLogging)
+		DebugLogger.Printf("Portego arguments => Query: '%s', Output: '%s', Console: '%t', Debug: '%t'", 
+			*packageName, 
+			*outputPath, 
+			*consoleOutput, 
+			*debugLogging,
+		)
 	}
 	
 	// Build query URL
@@ -122,6 +127,7 @@ func main() {
 			i, 
 			s.Name, 
 			s.Description,
-			s.URL)
+			s.URL,
+		)
 	}
 }
