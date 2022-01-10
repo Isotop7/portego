@@ -42,3 +42,4 @@ Right now we're on `0.0.0-prealpha-testing`. Version `1.0.0` might never come. V
 ## Sources / Links
 
 - [AURweb RPC Interface](https://wiki.archlinux.org/title/Aurweb_RPC_interface)
+- [PKGBUILD Reference](https://man.archlinux.org/man/PKGBUILD.5)
