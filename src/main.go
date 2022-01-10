@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"portego/src/pkgbuild"
 )
 
 // Logger types
@@ -116,7 +117,7 @@ func main() {
 		DebugLogger.Printf("Response from AUR: %s", httpBody)
 	}
 	
-	// Unmarshal json response to struct
+	// Unmarshal JSON response to struct
 	var results AURResult	
 	json.Unmarshal(httpBody, &results)
 	
@@ -130,4 +131,9 @@ func main() {
 			s.URL,
 		)
 	}
+	
+	source := portego.Pkgbuild{}
+	source.AddPkgname(results.Results[0].Name)
+	
+	fmt.Println(source.Pkgname())
 }
